@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>--------Isabella Smith-----------</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<script src="js/stegScript.js"></script> 
+		<link href="css/styleSteg.css" rel="stylesheet" />
+	</head>
+	
+	<body id="bod">
+	<div id="container1">
+		<select name="chars" id="scroller" onChange="displayImage(this.value)">
+			<option value="000original">0 chars</option>
+			<option value="33750chars">33,750 chars</option>
+			<option value="67500chars">67,500 chars</option>
+			<option value="101250chars">101,250 chars</option>
+			<option value="135000chars">135,000 chars</option>
+			<option value="168750chars">168,750 chars</option>
+			<option value="202500chars">202,500 chars</option>
+			<option value="236250chars">236,250 chars</option>
+			<option value="270000chars">270,000 chars</option>
+			<option value="303750chars">303,750 chars</option>
+			<option value="337500chars">337,500 chars</option>
+			<option value="371250chars">371,250 chars</option>
+			<option value="405000chars">405,000 chars</option>
+			<option value="438750chars">438,750 chars</option>
+			<option value="472500chars">472,500 chars</option>
+			<option value="506250chars">506,250 chars</option>
+			<option value="540000chars">540,000 chars</option>
+			<option value="573750chars">573,750 chars</option>
+			<option value="607500chars">607,500 chars</option>
+			<option value="641250chars">641,250 chars</option>
+			<option value="675000chars">675,000 chars</option>
+			<option value="708750chars">708,750 chars</option>
+			<option value="742500chars">742,500 chars</option>
+			<option value="776250chars">776,250 chars</option>
+			<option value="810000chars">810,000 chars</option>
+		</select>
+		<button id="btn" onClick="modalShow()">?</button>
+	</div>
+	
+	<div id="container">	
+		<div id="img1">
+			<h1>Original image:</h1>
+			<img id="image1" src="images/Steg/000original.jpg"></img>
+		</div>
+		<div id="img2">
+			<h1>Image with characters encoded:</h1>
+			<img id="image2" src="images/Steg/000original.jpg"></img>
+		</div>
+	</div>
+	
+	<div id="modalContainer" style="display:none;">
+		<div id="modal">
+			<img id="close-btn" onClick="modalHide()" src="images/Main/close-icon.svg" alt="Close modal"></img>
+			<h2 style="text-align:center;">How much text is actually Hidden?</h2>
+			<table class="zigzag">
+			  <thead>
+				<tr class="header">
+				  <th style="font-weight:bold;">Characters:</th>
+				  <th style="font-weight:bold;">Comparable to:</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr class="tr1">
+					<td>33,750 chars</td>
+					<td>US Declaration of Independence + US Constitution (34,563 characters)</td>
+				</tr>
+				<tr>
+					<td>67,500 chars</td>
+					<td>The Legend of Sleepy Hollow by Washington Irving (66,762 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>101,250 chars</td>
+					<td>Metamorphisis by Franz Kafka (118,415 characters)</td>
+				</tr>
+				<tr>
+					<td>135,000 chars</td>
+					<td>Alice's Adventures in Wonderland by Lewis Carroll (140,715 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>168,750 chars</td>
+					<td>The Tragedy of Hamlet + Prince of Denmark by William Shakespeare (171,410 characters)</td>
+				</tr>
+				<tr>
+					<td>202,500 chars</td>
+					<td>The Wonderful Wizard of OZ by L. Frank Baum (213,535 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>270,000 chars</td>
+					<td>King Henry VIII + The Tragedy of Julius Caesar by William Shakespeare (262,700)</td>
+				</tr>
+				<tr>
+					<td>371,250 chars</td>
+					<td>A Midsummer's Night's Dream + Much Ado about Nothing + Othello by William Shakespeare (359,963 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>405,000 chars</td>
+					<td>Frankenstein by Mary Shelley (413,307 characters)</td>
+				</tr>
+				<tr>
+					<td>438,750 chars</td>
+					<td>The Picture of Dorian Gray by Oscar Wilde (425,193 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>540,000 chars</td>
+					<td>The Adventures of Huckleberry Finn by Mark Twain (555,743 characters)</td>
+				</tr>
+				<tr>
+					<td>573,750 chars</td>
+					<td>The Adventures of Sherlock Holmes by Arthur Conan Doyle (556,104 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>641,250 chars</td>
+					<td>Walden and On the Duty of Civil disobedience by Henry David Thoreau (631,236 characters)</td>
+				</tr>
+				<tr>
+					<td>675,000 chars</td>
+					<td>Pride and Prejudice by Jane Austen (678,899 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>708,750 chars</td>
+					<td>A Tale of Two Cities by Charles Dickens(691,153 characters)</td>
+				</tr>
+				<tr>
+					<td>776,250 chars</td>
+					<td>The Iliad by Homer Books 1 thourgh 22 (765,914 characters)</td>
+				</tr>
+				<tr class="tr1">
+					<td>810,000 chars</td>
+					<td>Emma by Jane Austen (874,236 characters)</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+	
+	</body>
+</html>
