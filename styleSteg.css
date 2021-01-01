@@ -1,0 +1,120 @@
+body {
+	background-color: #000000;
+	background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(5,5,5,1) 1%, rgba(5,5,5,1) 99%, rgba(255,0,0,1) 100%);
+	color: #fff;
+}
+::-moz-selection {
+  background: #F42323;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #F42323;
+  color: #fff;
+  text-shadow: none;
+}
+#container1{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+#scroller{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	color: #FFFFFF;
+	font-size: 16px;
+	width: 240px;
+	height: 50px;
+	background-color: #B22D2D;
+	margin: auto;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 7px;	
+	float: left;
+	margin-right: 10px;
+}
+h1, h2{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+h1:hover, h2:hover{
+	color: #F42323;
+}
+
+#img1{
+	width: 650px;
+	float: left;
+	margin-bottom: 20px;
+}
+button{
+	color: #FFFFFF;
+	width: 50px;
+	height: 50px;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	background-color: #7F2222;
+	border: none;
+	border-radius: 5px;	
+	font-size: 35px;
+}
+#img2{
+	width: 650px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+#modalContainer{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+#modal{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	background-color: #F9F9F9;
+	color: #000;
+	width: 500px;
+	height: 600px;
+	margin: auto;
+	margin-top: 25px;
+	border: 2px solid black;
+	overflow: scroll;
+}
+#close-btn {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+#close-btn:hover {
+  opacity: 0.3;
+}
+table {  
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 12px;
+	overflow: scroll;
+}
+
+td {
+	padding:.2em .9em;
+	text-align:left;
+}
+.header{
+	background-color: #AFAFAF;
+	color: #fff;
+	border-radius: 20px;
+	font-size: 15px;
+	text-align: center;
+}
+.tr1{
+	border-radius: 10px;
+	background-color: #F2F2F2;
+}
+.tr2{
+	border-radius: 20px;
+	background-color: #E6E6E6;
+}
